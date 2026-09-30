@@ -17,6 +17,8 @@ LANGFUSE_PROMPT_NAME=day13-chat
 LANGFUSE_PROMPT_LABEL=production
 ```
 
+Nếu PowerShell đã có biến `LANGFUSE_PROMPT_LABEL` trong terminal, Uvicorn `--env-file .env` không ghi đè biến đó. Sau khi dừng API, chạy `Remove-Item Env:LANGFUSE_PROMPT_LABEL -ErrorAction SilentlyContinue` trong chính terminal chạy API, rồi khởi động lại để label trong `.env` có hiệu lực.
+
 ## Bước 1 — Tạo v1
 
 Trong project Langfuse cá nhân, mở **Prompt Management** và tạo **Text prompt**:
