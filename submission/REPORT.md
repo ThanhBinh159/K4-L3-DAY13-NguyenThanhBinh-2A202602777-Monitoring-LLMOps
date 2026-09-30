@@ -4,13 +4,13 @@
 
 ## 1. Thông tin học viên
 
-- **Họ và tên:**
-- **MSSV:**
+- **Họ và tên:** Nguyễn Thanh Bình
+- **MSSV:** 2A202602777
 - **Lớp:** K4-L3B
-- **Repository URL:**
+- **Repository URL:**https://github.com/ThanhBinh159/K4-L3-DAY13-NguyenThanhBinh-2A202602777-Monitoring-LLMOps
 - **Commit SHA cuối:**
 - **Challenge ID:**
-- **Tên project Langfuse cá nhân:** `day13-k4-l3b-<MSSV>`
+- **Tên project Langfuse cá nhân:** `day13-k4-l3b-2A202602777`
 
 ## 2. Evidence index
 
@@ -31,11 +31,11 @@ Giữ đúng ba output text và năm ảnh dưới đây. Không tách thêm ả
 
 | Nội dung | Baseline | Kết quả cuối | Nhận xét |
 |---|---|---|---|
-| `validate_logs.py` | | | |
-| `validate_dashboard.py` | | | |
-| `pytest` | | | |
-| Số traces hợp lệ | | | |
-| Số PII leak | | | |
+| `validate_logs.py` | 30/100; 21 records, 20 thiếu fields, 20 thiếu enrichment, 0 correlation ID | 100/100; 21 records, 10 correlation ID, 0 PII leak | CP1 hoàn tất |
+| `validate_dashboard.py` | 6/6 panel | | |
+| `pytest` | 22 passed in 7.89s; có cảnh báo Langfuse export timeout | 27 passed in 6.03s; có cảnh báo Langfuse export timeout | |
+| Số traces hợp lệ | 10 | | |
+| Số PII leak | 0 | 0 | |
 | Latency P95 / TTFT P95 | | | |
 | Retrieval success rate | | | |
 
